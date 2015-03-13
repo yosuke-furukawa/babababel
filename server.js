@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const levelup = require('levelup')
 const db = levelup('./mydb')
