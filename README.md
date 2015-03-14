@@ -16,5 +16,5 @@ npm start
 ## Libraries
 
 - `marked` instead of `showdown` because the latter isn't compatible with browserify.
-- `whatwg-fetch` (the [proposed](https://fetch.spec.whatwg.org/) replacement for XHR) instead of $.ajax.
+- `whatwg-fetch` (the [proposed](https://fetch.spec.whatwg.org/) for extensible web).
 
