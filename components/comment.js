@@ -3,7 +3,7 @@ const marked = require('marked')
 
 const Comment = React.createClass({
   render() {
-		const rawMarkup = marked(this.props.children.toString())
+    const rawMarkup = marked(this.props.children.toString())
     return (
       <div className="comment">
         <h2 className="comment-author">

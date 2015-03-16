@@ -1,10 +1,10 @@
 const React = require('react')
 
 const CommentForm = React.createClass({
-	handleSubmit(e) {
+  handleSubmit(e) {
     e.preventDefault()
-    let author = React.findDOMNode(this.refs.author).value.trim()
-    let text = React.findDOMNode(this.refs.text).value.trim()
+    const author = React.findDOMNode(this.refs.author).value.trim()
+    const text = React.findDOMNode(this.refs.text).value.trim()
 
     if (!text || !author) {
       return
@@ -20,7 +20,7 @@ const CommentForm = React.createClass({
     return (
       <form className="comment-form" onSubmit={this.handleSubmit}>
         <input type="text" placeholder="Your name" ref="author" />
-        <input type="text" placeholder="Say something..." ref="text" />
+        <input type="text" ref="text" />
         <input type="submit" value="Post" />
       </form>
     )

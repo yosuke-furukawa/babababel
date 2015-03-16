@@ -3,7 +3,7 @@ const CommentList = require('./comment-list')
 const CommentForm = require('./comment-form')
 
 const CommentBox = React.createClass({
-	getInitialState() {
+  getInitialState() {
     return { data: [] }
   },
 

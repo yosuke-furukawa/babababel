@@ -3,7 +3,7 @@ const Comment = require('./comment')
 
 const CommentList = React.createClass({
   render() {
-		const commentNodes = this.props.data.map((comment, i) => {
+    const commentNodes = this.props.data.map((comment, i) => {
       return (
         <Comment author={comment.author} key={i}>
           {comment.text}
