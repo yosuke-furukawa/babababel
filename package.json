@@ -24,8 +24,10 @@
     "watchify": "^2.4.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "npm run watch & node server.js",
+    "watch": "watchify index.js -d -t babelify -o public/bundle.js",
+    "build": "NODE_ENV=production browserify index.js -t babelify -g uglifyify -o public/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
